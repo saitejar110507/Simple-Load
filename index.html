@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleLoad - APK Downloads</title>
+
+  <!-- TailwindCSS and FontAwesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tailwind Custom Config with NEW COLORS -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0D9488',   // teal-600
+            secondary: '#F59E0B', // amber-500
+            dark: '#111827',      // gray-900
+            light: '#F9FAFB'      // gray-50
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <style>
+    .download-btn {
+      transition: all 0.3s ease;
+      transform: translateY(0);
+    }
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(13, 148, 136, 0.3);
+    }
+    .version-card {
+      transition: all 0.2s ease;
+    }
+    .version-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-light dark:bg-dark text-gray-800 dark:text-gray-200 transition-colors duration-200 min-h-screen flex flex-col">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-rocket text-2xl text-primary"></i>
+        <span class="text-xl font-bold text-primary">SimpleLoad</span>
+      </div>
+      <!-- GitHub + Theme toggle -->
+      <div class="flex items-center space-x-4">
+        <a href="https://github.com/your-repo-link" target="_blank" class="hover:text-primary transition text-xl">
+          <i class="fab fa-github"></i>
+        </a>
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+          <i class="fas fa-moon dark:hidden"></i>
+          <i class="fas fa-sun hidden dark:block"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="container mx-auto px-4 py-16 text-center flex-grow">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">SimpleLoad</h1>
+      <p class="text-lg mb-8 text-gray-600 dark:text-gray-300">
+        Fast, simple, and open-source APK downloads. Get the latest version below.
+      </p>
+      <a href="" download
+         class="download-btn bg-primary hover:bg-teal-700 text-white px-8 py-4 rounded-lg font-medium text-lg transition inline-flex items-center">
+        <i class="fas fa-download mr-2"></i> Download Modified APK Made By Our Trusted Community Members
+      </a>
+    </div>
+  </header>
+
+  <!-- APKs List -->
+  <main class="container mx-auto px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6 text-center">Modified Available APKs Available</h2>
+      <div class="space-y-4">
+
+        <!-- Spotify -->
+        <div class="version-card flex items-center justify-between bg-white dark:bg-gray-800 shadow rounded-lg p-4">
+          <div>
+            <h3 class="font-semibold">Spotify</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Trusted By Our Community People</p>
+          </div>
+          <a href="spotify-revanced_v9.0.50.416-patches_v5.26.0.apk" download
+             class="download-btn bg-primary hover:bg-teal-700 text-white px-4 py-2 rounded-lg font-medium inline-flex items-center">
+            <i class="fas fa-download mr-2"></i> Download
+          </a>
+        </div>
+
+        <!-- YouTube -->
+        <div class="version-card flex items-center justify-between bg-white dark:bg-gray-800 shadow rounded-lg p-4">
+          <div>
+            <h3 class="font-semibold">YouTube</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">MicroG Settings App Needed</p>
+          </div>
+          <a href="https://github.com/microg/GmsCore/releases/download/v0.3.7.250932/org.microg.gms-250932014-user.apk" download
+             class="download-btn bg-primary hover:bg-teal-700 text-white px-4 py-2 rounded-lg font-medium inline-flex items-center">
+            <i class="fas fa-download mr-2"></i> Download
+          </a>
+        </div>
+
+        <!-- MicroG Settings -->
+        <div class="version-card flex items-center justify-between bg-white dark:bg-gray-800 shadow rounded-lg p-4">
+          <div>
+            <h3 class="font-semibold">MicroG Settings</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Open-Source App. You can download from FDroid or Simply download from link</p>
+          </div>
+          <a href="files/simpleload-v0.8.0.apk" download
+             class="download-btn bg-primary hover:bg-teal-700 text-white px-4 py-2 rounded-lg font-medium inline-flex items-center">
+            <i class="fas fa-download mr-2"></i> Download
+          </a>
+        </div>
+
+        <!-- YouTube Music -->
+        <div class="version-card flex items-center justify-between bg-white dark:bg-gray-800 shadow rounded-lg p-4">
+          <div>
+            <h3 class="font-semibold">YouTube Music</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Trusted By Our Community</p>
+          </div>
+          <a href="youtube-music-revanced_v8.05.51-patches_v5.26.0.apk" download
+             class="download-btn bg-primary hover:bg-teal-700 text-white px-4 py-2 rounded-lg font-medium inline-flex items-center">
+            <i class="fas fa-download mr-2"></i> Download
+          </a>
+        </div>
+
+        <!-- Projects & GitHub -->
+        <div class="version-card flex items-center justify-between bg-white dark:bg-gray-800 shadow rounded-lg p-4">
+          <div>
+            <h3 class="font-semibold">Up-comming Projects and Github Link</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Project Repo Access</p>
+          </div>
+          <a href="files/anotherapp-v1.5.0.apk" download
+             class="download-btn bg-primary hover:bg-teal-700 text-white px-4 py-2 rounded-lg font-medium inline-flex items-center">
+            <i class="fas fa-download mr-2"></i> Link
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 py-6 mt-auto">
+    <div class="container mx-auto px-4 text-center text-sm text-gray-600 dark:text-gray-300">
+      <p>&copy; 2025 SimpleLoad. We collect and organize Open-source, Trusted Modified APKs and free for everyone.</p>
+      <p class="mt-1">Made with <i class="fas fa-heart text-red-500"></i> for the community</p>
+    </div>
+  </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (prefersDark) {
+      document.documentElement.classList.add('dark');
+    }
+
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+</body>
+</html>
